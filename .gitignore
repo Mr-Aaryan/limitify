@@ -1,0 +1,4 @@
+myvenv/
+dist/
+*.egg-info/
+build/

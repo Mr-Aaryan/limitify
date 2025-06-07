@@ -1,4 +1,4 @@
-module github.com/Mr-Aaryan/limitify
+module github.com/Mr-Aaryan/limitify/go
 
 go 1.24.2
 

@@ -15,7 +15,7 @@ class RateLimiter:
         
         print("Its checking time")
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        country_code = get_country_code(ip)
+        country_code = get_country(ip)
         
         async with httpx.AsyncClient() as client:
             try:

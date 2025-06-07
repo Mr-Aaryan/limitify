@@ -1,0 +1,30 @@
+{
+  "name": "limitify",
+  "version": "0.1.1",
+  "description": "A simple api rate-limiting library with analytics support",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ratelimit",
+    "limitify"
+  ],
+  "author": "Aryan KC",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    }
+  },
+  "files": [
+    "sdk_core.js",
+    "index.js",
+    "GeoLite2-Country.mmdb",
+    "helpers.js"
+  ],
+  "dependencies": {
+    "maxmind": "^4.3.27"
+  }
+}

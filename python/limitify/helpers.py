@@ -1,12 +1,12 @@
 import geoip2.database
 from pathlib import Path
 
-def get_country_code(ip: str) -> str:
+def get_country(ip: str) -> str:
     try:
         db_path = Path(__file__).parent.parent / "GeoLite2-Country.mmdb"
         reader = geoip2.database.Reader(str(db_path))
         response = reader.country(ip)
-        return response.country.iso_code or "NA"
+        return response.country.name or "NA"
     except:
         return "NA"
 

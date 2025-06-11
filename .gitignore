@@ -2,3 +2,4 @@ myvenv/
 dist/
 *.egg-info/
 build/
+pypiapitoken.txt

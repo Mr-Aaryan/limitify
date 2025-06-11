@@ -3,7 +3,7 @@ import os
 
 setup(
     name="limitify",
-    version="0.1.0",
+    version="0.1.1",
     description="A simple api rate-limiting library with analytics support",
     long_description=open('README.md').read() if os.path.exists('README.md') else '',
     long_description_content_type='text/markdown',

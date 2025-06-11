@@ -22,7 +22,7 @@ type RateLimitRequest struct {
 }
 
 func NewRateLimiter(apiKey string) *RateLimiter {
-	serverURL := "http://localhost:5000/rate-limit"
+	serverURL := "https://api.limitify.xyz/rate-limit"
 	return &RateLimiter{ApiKey: apiKey, ServerURL: serverURL}
 }
 

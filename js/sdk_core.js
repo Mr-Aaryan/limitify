@@ -1,7 +1,7 @@
 import { getCountry, getClientIp, getRequestMethod, getRequestPath } from './helpers.js';
 
 export class RateLimiter {
-  constructor(apiKey, serverUrl = 'http://localhost:5000/rate-limit') {
+  constructor(apiKey, serverUrl = 'https://api.limitify.xyz/rate-limit') {
     this.apiKey = apiKey;
     this.serverUrl = serverUrl;
   }

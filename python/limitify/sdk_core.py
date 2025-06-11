@@ -3,7 +3,7 @@ from datetime import datetime
 from .helpers import get_country_code, get_client_ip, get_request_method, get_request_path
 
 class RateLimiter:
-    def __init__(self, api_key, server_url="http://localhost:5000/rate-limit"):
+    def __init__(self, api_key, server_url="https://api.limitify.xyz/rate-limit"):
         self.api_key = api_key
         self.server_url = server_url
 
